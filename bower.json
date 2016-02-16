@@ -1,0 +1,21 @@
+{
+  "name": "TwitterApp",
+  "description": "Backbone Twitter application",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "jquery"
+  ],
+  "authors": [
+    "Caleb King"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Beginning Backbone Twitter Example</title>
+    <link rel='stylesheet' href="css/style.css">
+    <link rel='stylesheet' href="css/modern.css">
+</head>
+<body class='metrouicss'>
+<!-- HTML content and div placeholders-->
+<div id='timeline' class='timeline-view'>
+     <h2>My Tweets</h2>
+</div>
+
+<!-- Handlebars templates -->
+<script type="text/x-handlebars-template" id="timeline-template">
+ <ul class='listview'>
+        {{#each tweet}}
+        <li>
+          <div class='icon'>
+                  <img src='{{user.profile_image_url}}'></img>
+          </div>
+            <div class='data'>
+                <h4>{{user.name}}</h4>
+
+                <p>{{text}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+ </script>
+
+<!-- External library Includes -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+
+<!-- Model -->
+<script src="js/app/model/Tweet.js"></script>
+...
+<!-- Collections -->
+<script src="js/app/collection/Timeline.js"></script>
+.....
+<!-- View -->
+<script src="js/app/view/TimelineView.js"></script>
+.....
+
+<!-- Router -->
+<script src="js/app/router/AppRouter.js"></script>
+.....
+
+<!-- The 'main' for this app -->
+<script src="js/app/app.js"></script>
+</body>
+</html>
